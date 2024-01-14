@@ -1,0 +1,15 @@
+. a = 0000, b = 0010, Expected c = 0010, Actual c = 0010. Test passed.
+. a = 0010, b = 0001, Expected c = 0001, Actual c = 0001. Test passed.
+. a = 0011, b = 0010, Expected c = 0001, Actual c = 0110. Test failed! Error message: failed in mul
+. a = 0110, b = 0001, Expected c = 0110, Actual c = 0110. Test passed.
+. a = 0111, b = 0011, Expected c = 1010, Actual c = 1010. Test passed.
+. a = 0000, b = 0101, Expected c = 0000, Actual c = 0000. Test passed.
+. a = 0110, b = 0101, Expected c = 1011, Actual c = 1011. Test passed.
+. a = 0111, b = 0000, Expected c = 0111, Actual c = 0000. Test failed! Error message: failed in div
+. a = 0011, b = 0101, Expected c = 1110, Actual c = 1110. Test passed.
+. a = 0110, b = 0010, Expected c = 1000, Actual c = 1000. Test passed.
+. a = 0000, b = 0111, Expected c = 1001, Actual c = 1001. Test passed.
+. a = 1110, b = 1101, Expected c = 0110, Actual c = 0110. Test passed.
+. a = 0100, b = 0010, Expected c = 0010, Actual c = 0010. Test passed.
+. a = 0010, b = 1110, Expected c = 1100, Actual c = 1100. Test passed.
+. a = 0011, b = 0011, Expected c = 0111, Actual c = 0110. Test failed! Error message: failed in add

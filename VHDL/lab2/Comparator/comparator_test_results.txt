@@ -1,0 +1,20 @@
+. a = 11110000, b = 11110000, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = 01011011, b = 00110101, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = 11111111, b = 11110000, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = 01011011, b = 00110101, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = XXXXXXXX, b = XXXXXXXX, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = UUUUUUUU, b = UUUUUUUU, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = ZZZZZZZZ, b = ZZZZZZZZ, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = HHHHHHHH, b = HHHHHHHH, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = LLLLLLLL, b = LLLLLLLL, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = WWWWWWWW, b = WWWWWWWW, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = UUUUXXXX, b = HHHHUUUU, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = --------, b = --------, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = 01110111, b = 00111101, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = 11011011, b = 10110101, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = 11000101, b = 11000101, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 1, Actual not_equal_out = 0. Test failed! Error message: failed in error_injec
+. a = 01110111, b = 00001101, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 0, Actual not_equal_out = 1. Test failed! Error message: failed in error_injec
+. a = 11011011, b = 10110101, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 0, Actual not_equal_out = 1. Test passed.
+. a = 11000101, b = 11000101, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 1, Actual not_equal_out = 0. Test passed.
+. a = HHHHHHHH, b = HHHHHHHH, Expected equal_out = 0, Expected not_equal_out = 1, Actual equal_out = 1, Actual not_equal_out = 0. Test failed! Error message: failed in error_injec
+. a = LLLLUUUU, b = WWWWLLLL, Expected equal_out = 1, Expected not_equal_out = 0, Actual equal_out = 0, Actual not_equal_out = 1. Test failed! Error message: failed in error_injec
