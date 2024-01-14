@@ -1,0 +1,5 @@
+. a = 1111, b = 0000, m = 1, Expected cout = 0, Actual cout = 0, Expected sum = 1111, Actual sum = 1111. Test passed.
+. a = 1110, b = 1100, m = 0, Expected cout = 1, Actual cout = 1, Expected sum = 1010, Actual sum = 1010. Test passed.
+. a = 1111, b = 1011, m = 1, Expected cout = 0, Actual cout = 0, Expected sum = 0100, Actual sum = 0100. Test passed.
+. a = 0000, b = 1111, m = 0, Expected cout = 0, Actual cout = 0, Expected sum = 1111, Actual sum = 1111. Test passed.
+. a = 1001, b = 1111, m = 0, Expected cout = 1, Actual cout = 1, Expected sum = 1000, Actual sum = 1000. Test passed.
