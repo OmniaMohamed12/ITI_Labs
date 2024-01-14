@@ -1,0 +1,65 @@
+lab 2
+=======
+1)Create the following hierarchy under your home directory:
+	 mkdir -p dir1/dir11
+	 mkdir -p dir1/dir12
+	 mkdir -p docs/mycv
+	 cd ./dir1/dir11
+	 touch file1.txt
+	
+2)Remove dir11 in one-step. What did you notice? And how did you 
+overcome that? 
+   rm -r -i ./dir1/dir11
+rm: descend into directory `./dir1/dir11'? y
+rm: remove regular empty file `./dir1/dir11/file.txt'? y
+rm: remove regular empty file `./dir1/dir11/file1.txt'? y
+rm: remove directory `./dir1/dir11'? y
+
+3)Copy the /etc/passwd file to your home directory making its name is mypasswd.
+	cp ../etc/passwd /root
+	mv ./passwd ./mypasswd
+
+4)Rename this new file (which at your home) to be oldpasswd 
+	mv ./mypasswd ./oldpasswd
+
+5)Write the command which display the man page of the passwd file”/etc/passwd”. 
+	more ../etc/passwd
+
+6)Write the command which display a list of all the commands that 
+contain the keyword “passwd” in their man/manual page.
+	man -k passwd
+
+7)You are in /usr/bin, list four ways to go to your home directory 
+	cd ~ 
+	cd 
+	cd ../../root
+	cd /root/
+	
+8)The output of the command pwd was /home/<your_user_name>. 
+  Write the absolute and relative path for the file /etc/passwd
+	absolute path: /etc/passwd
+	relative path: ../../etc/passwd
+ 
+ 
+9)Show the total directory size of /home/<your_user_name>.
+	sudo du -h /home
+
+
+10)List all files at your /etc which end with .config
+	cd /etc 
+    ls *.config
+	
+11)Create a folder called /tmp/myconfig and copy to it all .config files from etc to it 
+	mkdir -p /tmp/myconfig
+    cp /etc/*.config /tmp/myconfig
+	
+12)Remove the directory /tmp/myconfig
+	rm -r /tmp/myconfig
+rm: descend into directory `/tmp/myconfig'? y
+rm: remove regular file `/tmp/myconfig/man.config'? y
+rm: remove regular file `/tmp/myconfig/scsi_id.config'? y
+rm: remove directory `/tmp/myconfig'? y
+
+13)Display lines 1 to line 5 of /etc/passwd file
+	head -5 /etc/passwd
+=============================================
