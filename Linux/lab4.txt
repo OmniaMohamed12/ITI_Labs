@@ -1,0 +1,81 @@
+LAB4
+=====
+1. Add islam user to the pgroup group as a supplementary group 
+	gpasswd -a islam pgroup 
+2. Log out and log in by another user 
+	login :su islam 
+    logout:exit 
+3. Modify the password of islam's account to password 
+	su islam 
+    passwd 
+4. Modify islam's account so the password expires after 30 days 
+	chage -E 2023-11-15 islam
+5. Lock bad user account so he can't log in 
+	usermod -L baduser
+6. Delete bad user account 
+	userdel -r baduser
+7. Delete the group called badgroup. 
+	groupdel badgroup
+8. As you Super user, Set or change the password of root
+	passwd root 
+9. As you Super user, Try to remove all files in /tmp 
+	rm -r /tmp/*
+10. Create a folder called /tmp/myteam and change its 
+permissions to read only for the owner, and Group and Other
+didn’t have permission on it. 
+	mkdir -p /tmp/myteam
+	chmod u+r,g-rwx,o-rwx /tmp/myteam
+11. Log out and log in by another user 
+	logout:exit
+    login :su islam
+12. Try to access (by cd command) the folder (myteam) 
+	cd /tmp/myteam    :Permission denied
+13. Change the permissions of /tmp/mycv file to give owner 
+read and write permissions and for group write and execute and 
+execute only for the others (using chmod in 2 different ways )
+	mkdir -p /tmp/mycv
+	a)chmod u+rw,g=wx,o=x /tmp/mycv
+	b)chmod 631 /tmp/mycv
+14. What are the minimum permission needed for : 
+a. Copy a file (permission for source file and and 
+permission for target parent directory) 
+	rw
+b. Delete a file 
+	w
+c. Change to a directory 
+	x
+d. List a directory content (ls command) 
+	r
+e. View a file content (more/cat command) 
+	r
+f. Modify a file content 
+	w
+15. Create a file with permission 444 in /tmp directory. Try to 
+edit in it and to remove it? Note what happened. 
+	cd /tmp
+   touch lab3.txt
+   chmod 444 /tmp/lab3.txt
+vi lab3.txt  :  W10: Warning: Changing a readonly file
+               E45: 'readonly' option is set (add ! to override)
+16. What is the difference between the “x” permission for a 
+file and for a directory 
+	execute file :ls
+    execute directory :cd
+17. List the All environment variables in your current shell. 
+	env
+18. What are the commands that list the value of a specific 
+variable? 
+	echo ${var_name}
+19. Display your current User name using Environment 
+Variables.
+	echo $USER
+20. Create a Bash shell alias named ls for the “ls –l” 
+command, How to bypass this alias? 
+	alias ls='ls -l'
+    \ls 
+21. How to check if your internet connection is work? 
+	 ping
+22. By editing /etc/hosts, make the URL www.iti-project-dep.com 
+forward you to 195.10.10.2
+	vi /etc/hosts
+    195.10.10.2 www.iti.project-dep.com
